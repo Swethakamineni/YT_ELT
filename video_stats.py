@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv(dotenv_path=".env")
 
-API_KEY = os.getenv("YOUTUBE_API_KEY", "AIzaSyBlCtMefYlFCCTTxLGiag-uy3DJj8SDIaE")
+API_KEY = os.getenv("API_KEY")
 
 def get_playlist_id(channel_handle: str = "MrBeast") -> str:
     try:
